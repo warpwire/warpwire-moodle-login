@@ -1,0 +1,48 @@
+<?php
+
+$_IS_DEV = false;
+
+// Version of the Sakai Webservices
+$_WW_WEBSERVICES_VERSION = 1.3;
+$_BASE64_ENCODED_VALUES = false;
+
+// Signature key for signing requests to Warpwire
+$_WW_USER = '<CONTACT_WARPWIRE_SUPPORT>';
+$_WW_KEY = '<CONTACT_WARPWIRE_SUPPORT>';
+$_WW_URL = '<CONTACT_WARPWIRE_SUPPORT>';
+
+// Method to authenticate against sakai (methods: SOAP,REST)
+$_WW_AUTH_METHOD = 'REST';
+// Allow SSO-style login for REST-based clients
+$_WW_USE_SESSION = true;
+// Consult with Warpwire before changing the below value - this must be consistent
+// across Moodle, your SSO Provider, or any other service that will be using Warpwire
+$_WW_UNIQUE_PARAM = 'userId';
+
+// URL FOR Login WebService
+# Your moodle URL should be in the form of 'https://moodle.example.com'
+$_LOGIN_URL = '<YOUR MOODLE WEB URL>';
+$_LOGIN_URL_REST = '<YOUR MOODLE WEB URL>/login/token.php';
+$_REST_ENDPOINT = rtrim($_LOGIN_URL,'/').'/webservice/rest/server.php';
+
+// Label to show for all users who will login to the service
+$_SERVICE_LOGIN_TEXT = 'Log in to view this secure media.';
+$_SERVICE_NAME = 'Warpwire login for <YOUR ORGANIZATION>';
+$_SERVICE_LOGIN_LABEL = 'Username';
+
+// CSS Style for the display logo
+$_SERVICE_HEADER_PADDING = 'padding: 15px 0;';
+# Recommended dimensions for the logo are width: 250 pixels height: 100 pixels
+$_SERVICE_ICON = '<YOUR ORGANIZATION LOGO>';
+$_SERVICE_ICON_DIMENSIONS = 'width: 250px; height: auto;';
+$_SERVICE_COLOR = 'f7f7f7';
+$_SERVICE_COLOR_ALTERNATE = '222222';
+$_SERVICE_COLOR_HOVER = '0073ba';
+
+// uncomment if the username and password have been base64 encoded
+if ($_BASE64_ENCODED_VALUES == true) {
+	$_LOCAL_PARTS = array('_WW_USER', '_WW_KEY');
+	foreach($_LOCAL_PARTS AS $_LP) {
+		$$_LP = base64_decode($$_LP);
+	}
+}
