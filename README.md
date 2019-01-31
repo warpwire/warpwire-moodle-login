@@ -31,7 +31,7 @@ Provide the information listed below and we will host the script and login page 
 	* Replace `<YOUR ORGANIZATION LOGO>` with the file name of the logo image you'd like to use. 
   * Place the logo image file in the same directory as the `config.php` file.
 
-*	__ONLY__ if you’d like Warpwire to host the login page (Option 2): You will need to make sure your firewall allows Warpwire to connect remotely to access your API services:
+* __ONLY__ if you’d like Warpwire to host the login page (Option 2): You will need to make sure your firewall allows Warpwire to connect remotely to access your API services:
   * 173.231.182.70
   * 173.231.182.71
   * 63.251.106.123
