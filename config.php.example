@@ -2,7 +2,7 @@
 
 $_IS_DEV = false;
 
-// Version of the Sakai Webservices
+// Version of the Moodle Webservices
 $_WW_WEBSERVICES_VERSION = 1.3;
 $_BASE64_ENCODED_VALUES = false;
 
@@ -11,7 +11,7 @@ $_WW_USER = '<CONTACT_WARPWIRE_SUPPORT>';
 $_WW_KEY = '<CONTACT_WARPWIRE_SUPPORT>';
 $_WW_URL = '<CONTACT_WARPWIRE_SUPPORT>';
 
-// Method to authenticate against sakai (methods: SOAP,REST)
+// Method to authenticate against Moodle (methods: REST)
 $_WW_AUTH_METHOD = 'REST';
 // Allow SSO-style login for REST-based clients
 $_WW_USE_SESSION = true;
