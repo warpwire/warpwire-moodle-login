@@ -10,7 +10,7 @@ Download the script from GitHub and host it yourself.
 
 **Option 2: Warpwire-hosted**
 Let us take care of it. 
-Provide the information listed below and we will host the script and login page allowing Sakai authentication outside of Sakai
+Provide the information listed below and we will host the script and login page allowing Moodle authentication outside of Moodle
   - If you choose this option, Warpwire will handle the implementation
   - If you choose this option, some user login data will pass through Warpwire servers
 
